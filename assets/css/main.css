@@ -4000,16 +4000,11 @@ body.is-preload #sidebar nav ul li {
 		  color: white;
 		  padding: 10px;
 		  width: 30%;
-  }
-  
-  body{
-	  background-color: #0a7aca;
-  }
-  
+  }  
   .box{
 	  width: 100%;
 	  padding: 30px 30px 50px;
-	  background-color: white;
+	  background-color: rgb(218, 233, 247);
 	  border: 2px solid rgba(255,255,255,0.06);
 	  border-radius: 10px;
 	  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
@@ -4054,7 +4049,7 @@ body.is-preload #sidebar nav ul li {
    
   }
   #html-bar{
-	  animation: html-fill 2s forwards;
+	  animation: html-fill 4s forwards;
   }
   @keyframes html-fill{
 	  100%{
@@ -4062,7 +4057,7 @@ body.is-preload #sidebar nav ul li {
 	  }
   }
   #css-bar{
-	  animation: css-fill 2s forwards;
+	  animation: css-fill 4s forwards;
   }
   @keyframes css-fill{
 	  100%{
@@ -4070,7 +4065,7 @@ body.is-preload #sidebar nav ul li {
 	  }
   }
   #js-bar{
-	  animation: js-fill 2s forwards;
+	  animation: js-fill 4s forwards;
   }
   @keyframes js-fill {
 	  100%{
@@ -4078,7 +4073,7 @@ body.is-preload #sidebar nav ul li {
 	  }
   }
   #jQuery-bar{
-	  animation: jQuery-fill 2s forwards;
+	  animation: jQuery-fill 4s forwards;
   }
   @keyframes jQuery-fill{
 	  100%{
@@ -4095,4 +4090,40 @@ body.is-preload #sidebar nav ul li {
 	.left, .middle, .right {
 	  width: 100%;
 	}
+  }
+
+  .container_badges {
+    padding: 2.5% 2.5%;
+    margin: 2.5%;
+    min-width: min-content;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .badge-gallery {
+    /* Mobile first */
+    padding: 5.5% 0.5% 0.5% 5.5%;
+    display: flex;
+    flex-direction: row;
+    max-height: max-content;
+    min-height: min-content;
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .badge-gallery.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  .badge-item img {
+    width: 80%;
+    border-radius: 5px;
+    height: 80%;
+    object-fit: contain;
   }
