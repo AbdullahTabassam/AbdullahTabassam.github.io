@@ -18,6 +18,9 @@
 		opacity: 1 !important;
 	}
 
+	#more-content {
+		display: none;
+	  }
 /* Wrapper */
 
 	.wrapper > .inner {

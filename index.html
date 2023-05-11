@@ -11,8 +11,34 @@
     <script src="https://kit.fontawesome.com/58997e6a33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
+    ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    
+      #show-more-button{
+        color: #4b3f53  !important;
+        border-color: #4b3f53 !important;
+        font-size: 0.6em;
+        font-weight: bold;
+      }
+      #more-content {
+        display: none;
+      }
+      .button-container {
+        text-align: center;
+      } 
+    </style>
+    <script>
+      $(document).ready(function() {
+        $('#show-more-button').click(function() {
+          $('#more-content').toggle();
+          var buttonText = $(this).text();
+          $(this).text(buttonText == 'Show more' ? 'Show less' : 'Show more');
+        });
+      });
+    </script>
   </head>
   <body class="is-preload">
     <!-- Sidebar -->
@@ -319,15 +345,19 @@
     <p>My Digital Certificates</p>
     
     <div class="container_badges fade-up">
-        <div class="badge-gallery box">
-
+      <div class="box">
+          <div style="padding: 0 40px 0px;"><p> <img src="\images\IBM.png" alt="IBM" style="width: 60px; height: 30px;"></p> </div>
+        <div class="badge-gallery">
+          
+          
             <div class="row">
                 <div class="badge-item">
                    <a href="https://www.coursera.org/account/accomplishments/verify/WP9CHB36ZUHU" target="_blank"> <img src="images/1.jpg"  /></a>
                 </div>
                 <div class="badge-item">
                     <a href="https://www.coursera.org/account/accomplishments/verify/3LKPBK44M922" target="_blank"> <img src="images/2.jpg"  /></a>
-                 </div>
+                    
+                  </div>
             </div>
             <div class="row">
                 <div class="badge-item">
@@ -346,7 +376,62 @@
                     <a href="https://www.coursera.org/account/accomplishments/verify/CFC2KWM42GR9" target="_blank"> <img src="images/6.jpg" alt="" /></a>
                  </div>
             </div>
-        </div>
+          </div>
+          <div id="more-content">
+              <div style="padding: 0 40px 0px;"><p> <img src="\images\Microsoft.png" alt="Microsoft" style="width: 135px; height: 32px;"></p> </div>
+              <div class="badge-gallery">
+          
+                  <div class="row">
+                      <div class="badge-item">
+                         <a href="https://www.coursera.org/account/accomplishments/verify/TWUZCL5TBA8V" target="_blank"> <img src="images/M4.jpg"  /></a>
+                      </div>
+                      <div class="badge-item">
+                          <a href="https://www.coursera.org/account/accomplishments/verify/HDPEMU6YCCSP" target="_blank"> <img src="images/M1.jpg"  /></a>
+                       </div>
+                  </div>
+                  <div class="row">
+                      <div class="badge-item">
+                         <a href="https://www.coursera.org/account/accomplishments/verify/3GJGTAXXBYSB" target="_blank"> <img src="images/M2.jpg"  /></a>
+                      </div>
+                      <div class="badge-item">
+                          <a  target="_blank"> <img src="images/replace.png" /></a>
+                       </div>
+                  </div>
+                  <div class="row">
+                      <div class="badge-item">
+                         <a href="https://www.coursera.org/account/accomplishments/verify/AH87TYZU3AJ5" target="_blank"> <img src="images/M3.jpg" alt="" /></a>
+                      </div>
+                      <div class="badge-item">
+                          <a  target="_blank"> <img src="images/replace.png" alt="" /></a>
+                       </div>
+                  </div>
+              </div>
+              <div style="padding: 0 40px 0px;"><p> <img src="\images\Meta.png" alt="Meta" style="width: 120px; height: 25px;"></p> </div>
+              <div class="badge-gallery">
+          
+                  <div class="row">
+                      <div class="badge-item">
+                         <a href="https://www.coursera.org/account/accomplishments/verify/KDXHTH29K2H9" target="_blank"> <img src="images/M.jpg"  /></a>
+                      </div>
+                     
+                  </div>
+                  <div class="row">
+                      <div class="badge-item">
+                          <a  target="_blank"> <img src="images/replace.png" /></a>
+                       </div>
+                     
+                  </div>
+                  <div class="row">
+                      <div class="badge-item">
+                          <a  target="_blank"> <img src="images/replace.png" /></a>
+                       </div>
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="button-container"><button id="show-more-button" class="shw_btn">Show more</button></div>
+          
+          
     </div>
 </section>
       <!-- Two -->
